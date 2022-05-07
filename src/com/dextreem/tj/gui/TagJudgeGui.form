@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.dextreem.tj.gui.TagJudgeGui">
+  <grid id="27dc6" binding="panelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="1200" height="800"/>
+    </constraints>
+    <properties>
+      <maximumSize width="2000" height="2000"/>
+      <minimumSize width="1200" height="600"/>
+      <preferredSize width="1200" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="67525" binding="panelImage" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="efe8a" binding="panelControl" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="1debd" binding="panelCurrentTag" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c5db1" class="javax.swing.JLabel" binding="lblCurrentTag">
+                <constraints/>
+                <properties>
+                  <font size="18"/>
+                  <text value="Zu bewertender Tag:"/>
+                </properties>
+              </component>
+              <component id="34118" class="javax.swing.JLabel" binding="lblCurrentTagValue">
+                <constraints/>
+                <properties>
+                  <font size="18"/>
+                  <text value="Beispiel"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="65600" binding="panelButtons" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ccc47" class="javax.swing.JLabel" binding="lblButtons">
+                <constraints/>
+                <properties>
+                  <text value="Tag passt ..."/>
+                </properties>
+              </component>
+              <component id="fe85b" class="javax.swing.JButton" binding="btnGreat">
+                <constraints/>
+                <properties>
+                  <text value="sehr gut (3)"/>
+                  <toolTipText value="Wenn die Stimmung sehr gut passt, wähle hier aus. Eine Stimmung muss nicht unbedingt ein Adjektiv sein. &quot;Entspannt&quot; und &quot;Entspannung&quot; wären demnach gleich gut, sofern es auf das Bild passt"/>
+                </properties>
+              </component>
+              <component id="e4c2e" class="javax.swing.JButton" binding="btnOkay">
+                <constraints/>
+                <properties>
+                  <text value="gut (2)"/>
+                  <toolTipText value="Wenn die Stimmung eher weniger passt, wähle hier das aus, sofern es kein Kappes ist."/>
+                </properties>
+              </component>
+              <component id="e1944" class="javax.swing.JButton" binding="btnBad">
+                <constraints/>
+                <properties>
+                  <text value="nicht gut (1)"/>
+                  <toolTipText value="Sollte das Stichwort nicht im Ansazu passen (z.B. ein Artikel), wähle das hier aus. Wurde von Elisa NIE gecoded."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="1a3c8" binding="panelSave" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <visible value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6e627" class="javax.swing.JButton" binding="btnSave">
+                <constraints/>
+                <properties>
+                  <text value="Speichern"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
